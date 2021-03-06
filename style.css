@@ -1,0 +1,552 @@
+
+/*Estilo general de todas las páginas*/
+* {
+    margin: 0;
+    padding: 0;}
+body{
+background-color: rgba(7, 4, 4, 0.856);
+font-family: 'Amatic SC', cursive;
+}
+.encabezado, .menu-lala {
+width: 100%;
+height: 25%;
+background-color: black;
+text-align: center;
+text-decoration:none;
+font-size: 2rem;
+padding: 10px;
+
+}
+.menu-lala nav a:hover{
+    background-color: darkgray;
+}
+/*Resalta la opción seleccionada del menu*/
+
+header{
+    border-bottom: 1.5px solid cornsilk ;
+}
+/*estilo del encabezado, color negro, imagen centrada*/
+nav a{
+    text-decoration: none;
+    color: cornsilk;
+    text-justify: distribute-all-lines;
+    margin: 20px;
+}
+.lala-footer{
+    text-align: center;
+    margin: 2%;
+    
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.footer-line{
+    border-top: 1.5px solid cornsilk;
+    margin-top: 25px;
+}
+/*Falta agrergar iconos de las redes sociales, etc*/
+h1{
+    padding: 25px;
+    font-size: 50px;
+    color: cornsilk;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 10px;
+   
+}
+h3, h4, h5, summary{
+    top: 30px;
+    left: 25px;
+    color: whitesmoke;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 70px;
+}
+ul{
+    width: 550px;}
+
+ /*Pagina Inicio*/
+.section-home1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    height: 20%;
+    margin: 5% 0;
+
+}
+.imagenes-inicio{
+    width: auto;
+    height: auto;
+    margin: 5% 0%;
+}
+.titulo-home{
+    margin-bottom: 2%;
+}
+.subtitulo-home{
+    margin: 2% 0 5% 10%;
+    
+}
+.detalle-home ul li{
+    background-color: rgb(192, 189, 149);
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.5rem;
+
+    
+}
+.detalle-home ul{
+    margin: 2% 0 5% 10%;
+    border: 3px solid cornsilk;
+    background-color: rgb(192, 189, 149);
+}
+.section-home1 div h4 a:hover{
+    background-color: darkgray;
+}/*Resalta el link que redirige a "nuestros Productos"*/
+
+/*Animaciones Pagina de Inicio*/
+.titulo-home{
+    animation: 2.5s alternate-reverse infinite zoom;
+    transition: all;
+}
+
+@keyframes zoom{
+    0% {
+    transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1.4);
+    }
+   }
+
+/*Propios de pagina Nuestros productos*/
+p, .subtitulo-productos{/*Tamaño, color, texto y font family para parrafos*/
+    width: 420px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15% ;
+}
+.titulos-productos {
+    font-size: 45px;
+    color: cornsilk;
+    margin-top: 20px;
+    margin-bottom: 15PX;
+    width: 600px;
+    text-align: center;
+}
+p{/*Formato de todos los cuadros de textos*/
+    border: 3px solid cornsilk;
+    background-color: rgb(192, 189, 149);
+    padding: 2%;
+    text-align: justify;
+    color: rgba(7, 4, 4, 0.856);
+    margin-top: 10px;
+}
+.subtitulo-productos{
+    font-style: bold;
+    color: cornsilk;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 450px;
+
+}
+
+/*Primer sección, video, enlaces a tipos de productos*/
+.titulo-nuestros-productos{
+    text-align: center;
+    font-size: 50px;
+    font-style: oblique;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 800px;
+}
+.opciones-productos {
+    display: flex;   
+}
+.opciones-productos iframe {
+margin-left: 75px;
+}
+.tipos-productos{
+    margin-top: 12px;
+    justify-content: left;
+    margin-bottom: 40px;
+    font-size: 45px;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    display: block;
+    width: 700px;
+}
+
+.tipos-productos li a:hover{
+    font-size: 120%;
+    background-color: darkgray;
+}/*Resalta el link que redirige a "nuestros Productos"*/
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: cornsilk;
+}
+/*Segunda sección, tipos de desayunos infantiles, imagenes*/
+.img-desayunos-infantiles{
+    width: 350px;
+    height: 350px;
+    margin-left: 15px;
+    margin-top: 35px;
+}
+.desayunos-infantiles{
+    display: flex;
+    align-items: center;
+}
+/*Tercera sección, tipos de desayunos premium, imagenes*/
+.desayuno-premium {
+    display: flex;
+    align-items: center;
+}
+.img-desayunos-premium{
+    width: 550px;
+    height: 400px;
+    margin-left: 90px;
+    margin-top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Quinta sección, lista picadas, imagenes*/
+
+.desayuno-premium div ol li {
+    color: cornsilk;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.col-sm{
+    color: cornsilk;
+    font-size: 17px;
+    justify-content: center;
+    margin-left: 7%;
+    margin-right: 4%;
+}
+
+/*Animaciones Pagina Nuestros Productos*/
+.titulos-productos:hover{/*efecto rebote para las palabras cuando pasas el raton por encima*/
+    transition: all;
+    animation: 1.8s infinite rebotar;
+}
+/*Efecto Zoom sobre imagenes*/
+.img-desayunos-premium:hover,.img-desayunos-infantiles:hover,.imagenes-inicio:hover, .col-sm:hover{
+    transform: scale(1.3);
+}
+
+@keyframes rebotar{
+    to{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(20px);
+    }
+    35%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(10px);
+    }
+    from{
+        transform: translateY(0px);
+    }
+}
+
+
+/*Propios de pagina Preguntas frecuentes*/
+.preguntas-frecuentes-titulo{
+    font-size: 50px;
+    text-align: center;
+    width: 600px;
+    justify-content: center;
+    margin: 5% 30%;
+}
+
+details p { 
+    height: auto;
+    text-align: justify;
+}
+summary {
+    color: wheat;
+    margin-left: 5%;
+
+}
+.faq-lala{
+    width: 800px;
+    margin: 2% 5%;
+    text-align: justify;
+}
+label{
+    color: wheat;
+    margin-left: 30%;
+}
+.tamaño-form input, .tamaño-form textarea{
+    width: 530px;
+    margin-left: 32.5%;
+    border: 3px solid cornsilk;
+    background-color: rgb(192, 189, 149);
+}
+.col-4{
+    width: auto;
+    height: auto;
+    display: grid;
+}
+
+/*Opciòn para moviles*/
+@media only screen and (max-width: 400px) {
+.encabezado img{
+   width: 100%;
+   max-width: 399px;
+   height: auto;
+}
+.encabezado, .menu-lala{
+    width: 100%;
+    max-width: 399px;
+    height: 10%;
+    font-size: 0.6rem;
+}
+
+.lala-footer h5{
+    display: none;
+}
+.lala-footer div{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+}
+.lala-footer div a{
+    margin: 2% 10% 2% 0%;
+}
+/*Pagina Inicio*/
+.section-home1{
+    display: inline-block;
+    width: 80%;
+    height: 20%;
+}
+.section-home1 iframe{
+    display: none
+}
+.imagen-regalo-inicio{
+    display: none;
+}
+.imagenes-inicio{
+    width: 60%;
+    height: auto;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+.imagenes-inicio:hover{
+    transform: scale(1.3);
+}
+.titulo-home{
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+}
+.subtitulo-home{
+    margin-top: 2%;
+    font-size: 1.1rem;
+    width: 300px;
+}
+.detalle-home ul li{
+    background-color: rgb(192, 189, 149);
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1rem;
+    width: 95%;
+    max-width: 300px;
+    
+}
+.detalle-home ul{
+    max-width: 100%;
+    font-size: 7px;
+    padding: 0;
+}
+/*Pagina Nuestros Productos*/
+iframe{
+    display: none;
+}
+.desayunos-infantiles, .desayuno-premium, .desayunos-infantiles p,.desayuno-premium p{
+    display: block;
+    width: 80%;
+    max-width: 380px;
+}
+
+.titulos-productos, .subtitulo-productos, .titulo-nuestros-productos{
+    width: 79%;
+    max-width: 359px;
+}
+.img-desayunos-premium, .img-desayunos-infantiles{
+    width: 50%;
+    height: 20%;
+    display: flex;
+}
+
+
+/*Pagina Preg. Frecuentes*/
+.preguntas-frecuentes-titulo, .container, .form-lala{ 
+    display: none;
+}
+}
+
+
+/* mobile horizontal */
+@media only screen and (min-width: 401px) and (max-width: 640px) {
+    .encabezado img{
+   width: 100%;
+   max-width: 639px;
+   height: 30%;
+}
+.encabezado, .menu-lala{
+    width: 100%;
+    max-width: 639px;
+    height: auto;
+    font-size: 1.15rem;
+}
+
+/*Pagina Inicio*/
+.section-home1{
+    display: block;
+    width: 70%;
+    height: 40%;
+    margin: 5% 0;
+}
+
+.imagenes-inicio{
+        width: 70%;
+        height: auto;
+        margin-right: 35%;
+        margin-left: 35%;
+        display: block;
+}
+.titulo-home{
+    margin-bottom: 2%;
+    font-size: 1.9rem;
+}
+.subtitulo-home{
+    margin-top: 2%;
+    font-size: 1.7rem;
+    width: 80%;
+    max-width: 959px;
+    
+}
+.detalle-home ul li{
+    background-color: rgb(192, 189, 149);
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.5rem;
+    width: 85%;
+    max-width: 639px;
+    
+}
+
+.detalle-home ul{
+    margin: 5%;
+}
+.lala-footer{
+    display: flex;
+    width: 100%;
+    max-width: 639px;
+}
+/*Pagina Nuestros Productos*/
+iframe{
+    display: none;
+}
+.desayunos-infantiles, .desayuno-premium, .desayunos-infantiles p,.desayuno-premium p{
+    display: block;
+    width: 100%;
+    max-width: 639px;
+    margin: 0;
+}
+
+.titulos-productos, .subtitulo-productos, .titulo-nuestros-productos{
+    width: 79%;
+    max-width: 639px;
+}
+.img-desayunos-premium, .img-desayunos-infantiles{
+    width: 30%;
+    height: 20%;
+}
+
+/*Pagina Preg. Frecuentes*/
+.preguntas-frecuentes-titulo, .container, .form-lala{ 
+    display: none;
+}
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+    .encabezado img{
+   width: 100%;
+   max-width: 960px;
+   height: 30%;
+}
+.encabezado, .menu-lala{
+    width: 100%;
+    max-width: 959px;
+    height: auto;
+    font-size: 1.15rem;
+}
+
+/*Pagina Inicio*/
+.section-home1{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 40%;
+    margin: 5% 0;
+}
+
+.imagenes-inicio{
+    width: 60%;
+    margin: 5%;
+}
+.titulo-home{
+    margin-bottom: 2%;
+    font-size: 1.9rem;
+}
+.subtitulo-home{
+    margin-top: 2%;
+    font-size: 1.7rem;
+    width: 80%;
+    max-width: 959px;
+    
+}
+.detalle-home ul li{
+    background-color: rgb(192, 189, 149);
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.5rem;
+    width: 85%;
+    max-width: 959px;
+    
+}
+
+.detalle-home ul{
+    margin: 5%;
+}
+.lala-footer{
+    text-align: center;
+    margin: 2%;
+    width: 100%;
+    max-width: 959px;
+}
+}
